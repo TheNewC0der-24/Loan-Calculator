@@ -1,0 +1,52 @@
+body {
+    background-color: #6f42c1 !important;
+}
+
+#loading,
+#results {
+    display: none;
+}
+
+.card {
+    box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        100px 100px 80px rgba(0, 0, 0, 0.07);
+
+    border: none;
+}
+
+input {
+    text-decoration: none !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+    border-color: #6f42c1 !important;
+}
+
+.input-group-text {
+    border-color: #6f42c1 !important;
+    background-color: #6f42c1 !important;
+    color: #fff !important;
+}
+
+.btn {
+    color: #fff !important;
+    text-decoration: none !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+    background-color: #6f42c1 !important;
+}
+
+.btn:hover {
+    background-color: #61428f !important;
+}
+
+.spinner {
+    color: #6f42c1 !important;
+    font-size: larger;
+    width: 3rem !important;
+    height: 3rem !important;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./Assets/favicon.ico" type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Loan Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <div class="card card-body text-center mt-5">
+                    <h1 class="heading display-5 pb-3">Loan Calculator</h1>
+                    <form id="loan-form">
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-text">$</span>
+                                <input type="number" class="form-control" id="amount" placeholder="Loan Amount">
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <div class="input-group">
+                                <span class="input-group-text">%</span>
+                                <input type="number" class="form-control" id="interest" placeholder="Interest">
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <input type="number" class="form-control" id="years" placeholder="Years to repay">
+                        </div>
+                        <div class="form-group mt-3">
+                            <input type="submit" value="Calculate" class="btn">
+                        </div>
+                    </form>
+
+                    <div id="loading">
+                        <div class="spinner-border spinner d-flex justify-content-center mx-auto mt-5" role="status">
+                        </div>
+                    </div>
+
+                    <div id="results" class="pt-4">
+                        <hr>
+                        <h5 class="text-center">Result</h5>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-text">Total Payment</span>
+                                <input type="number" class="form-control" id="total-payment" disabled>
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <div class="input-group">
+                                <span class="input-group-text">Monthly Payment</span>
+                                <input type="number" class="form-control" id="monthly-payment" disabled>
+                            </div>
+                        </div>
+                        <div class="form-group mt-3">
+                            <div class="input-group">
+                                <span class="input-group-text">Total Interest</span>
+                                <input type="number" class="form-control" id="total-interest" disabled>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="./script.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
